@@ -1,0 +1,118 @@
+*,*::after,*::before
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p, h1
+{
+    font-family: 'Pangolin', cursive;
+    user-select: none;
+}
+body
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: calc(1vh + 1vw);
+    background-color: #025464;
+}
+body div.title h1
+{
+    font-size: calc(1vh + 1vw);
+    text-transform: uppercase;
+    color: #2D4356;
+}
+body div.container
+{
+    height: calc(17.5vh + 17.5vw);
+    width: calc(25vh + 25vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: calc(1vh + 1vw);
+    border-radius: calc(1vh + 1vw);
+    background-color: #fff;
+    border: calc(.2vh + .2vw) solid #E8AA42;
+    background-color: #FFFBC1;
+}
+body div.counter
+{
+    height: calc(5vh + 5vw);
+    width: calc(12.5vh + 12.5vw);
+}
+body div.title
+{
+    height: calc(5vh + 5vw);
+    width: calc(10vh + 10vw);
+}
+body div.counter, body div.title
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: calc(1vh + 1vw);
+    background-color: #fff;
+    border: calc(.2vh + .2vw) solid #E8AA42;
+    background-color: #FFFBC1;
+}
+body div.counter div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body div.counter div:nth-child(1)
+{
+    height: 50%;
+    width: calc(6vh + 6vw);
+    border-radius: calc(1vh + 1vw);
+    border: calc(.2vh + .2vw) solid #E8AA42;
+    background-color: #FFC95F;
+}
+body div.counter div:nth-child(2)
+{
+    height: 100%;
+    width: calc(1vh + 1vw);
+    background-color: #E8AA42;
+}
+body div.counter div:nth-child(3)
+{
+    height: calc(2.5vh + 2.5vw);
+    width: calc(2.5vh + 2.5vw);
+    border-radius: 50%;
+    border: calc(.2vh + .2vw) solid #E8AA42;
+    transition: border-radius .1s linear;
+    background-color: #FFC95F;
+    cursor: pointer;
+}
+body div.counter div p
+{
+    font-size: calc(.7vh + .7vw);
+    color: #2D4356;
+}
+body div.counter div i
+{
+    font-size: calc(1vh + 1vw);
+    color: #2D4356;
+}
+body div.counter div:nth-child(3):hover
+{
+    border-radius: calc(.8vh + .8vw);
+}
+body div.container textarea
+{
+    height: 100%;
+    width: 100%;
+    padding: calc(.5vh + .5vw);
+    color: #2D4356;
+    font-size: calc(.4vh + .4vw);
+    line-height: calc(.6vh + .6vw);
+    resize: none;
+    outline: none;
+    border: calc(.2vh + .2vw) solid #E8AA42;
+}
